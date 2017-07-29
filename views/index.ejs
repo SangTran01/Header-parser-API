@@ -13,21 +13,28 @@
 		<div class="page-header">
 			<h3>How to Use:</h3>
 		</div>
-		<p>1) I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</p>
-		<p>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</p>
-		<p>3) If it does not contain a date or Unix timestamp, it returns null for those properties.</p>
+		<p>1) Enter '/api/whoami/' to end of url</p>
+		<p>2) It returns your IP address, language, and software</p>
 
 		<div class="page-header">
 			<h3>Example Usage</h3>
 		</div>
-		<code>https://timestamp-ms.herokuapp.com/December%2015,%202015</code>
-		<br/>
-		<code>https://timestamp-ms.herokuapp.com/1450137600</code>
+		<code>https://protected-shore-32014.herokuapp.com/api/whoami/</code>
 
 		<div class="page-header">
 			<h3>Example Output</h3>
 		</div>
-		<code>{ "unix": 1450137600, "natural": "January 17, 1970" }</code>
+		<code>
+			{	
+				<br />
+				ipaddress: "45.3.11.94",
+				<br />
+				language: "en-US",
+				<br />
+				software: "Windows NT 10.0; Win64; x64"
+				<br />
+			}		
+		</code>
 	</div>
 	<div class="space"></div>
 	<script
